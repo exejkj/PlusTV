@@ -9,6 +9,7 @@
 .cont-text h1 {
   font-size: 80px;
   padding: 60px;
+  margin-top: 7%;
   text-align: center;
   font-weight: 600;
   color: #000000;
@@ -21,6 +22,10 @@ hr {
   background: radial-gradient(rgba(0, 0, 0, 0.209), rgba(0, 0, 0, 0.856)),
     url(/img/1neflix.png);
   animation: myAnim 500s linear 0s infinite alternate forwards;
+}
+.cont-fix {
+  position: fixed;
+  top: 0;
 }
 @keyframes myAnim {
   0% {
@@ -72,6 +77,8 @@ hr {
 }
 .cont-hidden {
   visibility: hidden;
+ 
+  
 }
 
 @media screen and (max-width: 1250px) {
@@ -87,8 +94,51 @@ hr {
     left: 25%;
   }
 }
+@media screen and (max-width: 1399px) {
+  #imagenes {
+    width: 60%;
+  }
+  .img_carss {
+    width: 60%;
+    margin: 0 auto;
+    left: 20%;
+  }
 
-@media screen and (max-width: 1200px) {
+  .cont-text h1 {
+    font-size: 450%;
+    padding: 20px;
+    margin-top: 0%;
+  }
+  .cont-bg-nv {
+    position: static !important;
+  }
+  .cont-foot-img a {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1990px) {
+  #imagenes {
+    width: 60%;
+  }
+  .img_carss {
+    width: 60%;
+    margin: 0 auto;
+    left: 20%;
+  }
+
+  .cont-text h1 {
+    font-size: 350%;
+    padding: 20px;
+    margin-top: 0%;
+  }
+  .cont-bg-nv {
+    position: static !important;
+  }
+  .cont-foot-img a {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 991px) {
   #imagenes {
     width: 70%;
   }
@@ -99,37 +149,82 @@ hr {
   }
 
   .cont-text h1 {
-    font-size: 400%;
+    font-size: 290%;
     padding: 20px;
   }
+  .cont-foot-img img {
+    width: 400px;
+  }
 }
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 767px) {
   #imagenes {
-    width: 90%;
+    width:70%;
   }
   .img_carss {
-    width: 90%;
+    width: 70%;
     margin: 0 auto;
-    left: 5%;
+    left: 15;
   }
 
   .cont-text h1 {
-    font-size: 330%;
-    padding: 20px;
+    font-size: 260%;
+    padding: 10px;
+    margin: 5px;
+    
+  }
+  .cont-input {
+    visibility: hidden;
+  }
+  .cont-hidden  {
+    visibility: visible;
+    
+  }
+  .cont-hidden span {
+    font-weight: 500;
+    font-size: 20px;
+    padding: 80px;
+  }
+ 
+  .cont-foot-img img {
+    width: 10%;
   }
 }
-@media screen and (max-width: 765px) {
+
+@media screen and (max-width: 568px) {
   #imagenes {
-    width: 100%;
+    width: 70%;
   }
   .img_carss {
-    width: 100%;
+    width: 70%;
     margin: 0 auto;
-    left: 0;
+    left: 15%;
   }
 
   .cont-text h1 {
-    font-size: 330%;
+    padding: 20px;
+    font-size: 35px;
+  }
+
+  .cont-hidden span {
+    font-weight: 500;
+    font-size: 20px;
+    padding: 60px;
+  }
+ 
+}
+
+@media screen and (max-width: 468px) {
+  #imagenes {
+    width: 70%;
+  }
+  .img_carss {
+    width: 70%;
+    margin: 0 auto;
+    left: 15;
+  }
+
+  .cont-text h1 {
+    font-size: 200%;
     padding: 20px;
   }
   .cont-input {
@@ -138,29 +233,10 @@ hr {
   .cont-hidden {
     visibility: visible;
   }
-}
-
-@media screen and (max-width: 495px) {
-  #imagenes {
-    width: 100%;
+  .cont-hidden span {
+    font-weight: 500;
+    font-size: 20px;
+    padding: 30px;
   }
-  .img_carss {
-    width: 100%;
-    margin: 0 auto;
-    left: 0%;
-  }
-
-  .cont-text h1 {
-    padding: 20px;
-    font-size: 35px;
-  }
-}
-.nav-txt2 {
-  color: #251e1f;
-  text-decoration: none;
-  font-size: 30px;
-}
-
-.margin-foot {
-  margin-top: 45px;
+ 
 }
