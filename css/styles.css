@@ -1,27 +1,52 @@
-
-
+* {
+  @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,600;0,700;1,100;1,200;1,300;1,600&family=Roboto:wght@300&display=swap");
+  font-family: "Montserrat", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
 .cont-text h1 {
-  font-size: 60px;
-  margin-bottom: 50px;
+  font-size: 80px;
+  padding: 60px;
   text-align: center;
+  color: #ffffff;
 }
+
 hr {
   margin: 0 150px !important;
 }
 .cont-bg-nv {
-  background-color: rgb(0, 0, 0) !important;
+  background: radial-gradient(rgba(0, 0, 0, 0.209), rgba(0, 0, 0, 0.856)),
+    url(/img/1neflix.png);
+  animation: myAnim 500s linear 0s infinite alternate forwards;
+}
+@keyframes myAnim {
+  0% {
+    background-position: 50% 100%;
+  }
+
+  100% {
+    background-position: 50% 0%;
+  }
+}
+.cont-text-nav {
+  display: flex;
+  align-items: center;
 }
 
 .cont_bg_foot {
   background-color: rgba(0, 0, 0);
 }
 .cont-btn button {
-  background-color: #ed0310;
+  background-color: #0355ed;
+}
+.cont-btn a {
+  font-size: 20px;
 }
 
 .cont-card h2 {
-  color:#ed0310;
+  color: #0355ed;
 }
 
 .img_cont1 {
@@ -39,12 +64,15 @@ hr {
   top: 0%;
   left: 25%;
 }
-.cont-bg-body{
-  background:linear-gradient(#000000,#434343,#000000);
+.cont-bg-body {
+  background: linear-gradient(#000000, #191819, #000000);
+}
+.cont-hidden {
+  visibility: hidden;
 }
 
 @media screen and (max-width: 1250px) {
-  .cont-text h2 {
+  .cont-text h1 {
     font-size: 400%;
   }
   #imagenes {
@@ -67,13 +95,12 @@ hr {
     left: 15%;
   }
 
-  .cont-text h2 {
+  .cont-text h1 {
     font-size: 400%;
+    padding: 20px;
   }
 }
 @media screen and (max-width: 990px) {
-}
-@media screen and (max-width: 765px) {
   #imagenes {
     width: 90%;
   }
@@ -83,23 +110,48 @@ hr {
     left: 5%;
   }
 
-  .cont-text h2 {
+  .cont-text h1 {
     font-size: 330%;
+    padding: 20px;
+  }
+}
+@media screen and (max-width: 765px) {
+  #imagenes {
+    width: 100%;
+  }
+  .img_carss {
+    width: 100%;
+    margin: 0 auto;
+    left: 0;
+  }
+
+  .cont-text h1 {
+    font-size: 330%;
+    padding: 20px;
+  }
+  .cont-input {
+    visibility: hidden;
+  }
+  .cont-hidden {
+    visibility: visible;
+   
+    
   }
 }
 
 @media screen and (max-width: 495px) {
   #imagenes {
-    width: 90%;
+    width: 100%;
   }
   .img_carss {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
-    left: 5%;
+    left: 0%;
   }
 
-  .cont-text h2 {
-    font-size: 45px;
+  .cont-text h1 {
+    padding: 20px;
+    font-size: 35px;
   }
 }
 .nav-txt2 {
@@ -108,32 +160,6 @@ hr {
   font-size: 30px;
 }
 
-.cont-form {
-  margin-top: 10%;
-  margin-bottom: 5%;
-  background-color: #000000c8;
-}
-
-@media screen and (max-width: 1200px) {
-  .cont-form {
-    margin: 25% 5%;
-  }
-}
-
-@media screen and (max-width: 900px) {
-  .cont-form {
-    margin: 35% 5%;
-  }
-}
-
-@media screen and (max-width: 610px) {
-  .cont-form {
-    margin-top: 45%;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .cont-form {
-    margin-top: 55%;
-  }
+.margin-foot {
+  margin-top: 45px;
 }
