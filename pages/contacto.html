@@ -12,6 +12,10 @@
     />
     <link rel="stylesheet" href="/css/styles-login.css" />
     <link rel="stylesheet" href="/css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+    />
 
     <!-- CSS only -->
     <link
@@ -24,9 +28,13 @@
   <body>
     <!-- HEADER -->
     <header>
-      <nav class="navbar navbar-expand-lg fixed-top cont-bg-nv">
+      <nav class="navbar navbar-expand-lg  cont-bg-nv">
         <div class="container">
-          <a class="navbar-brand text-light" href="/index.html" style="max-width: 20%">
+          <a
+            class="navbar-brand text-light"
+            href="/index.html"
+            style="max-width: 20%"
+          >
             <img src="/img/Logo.png" style="max-width: 100px" alt="" />
             <span class="fs-2">PlusTV </span>
           </a>
@@ -76,95 +84,90 @@
         </div>
       </nav>
     </header>
-
     <main>
-      <div class="container margin-lg">
-        <div class="row align-items-center">
-          <div class="col m-5 cont-img-lg d-none d-lg-block">
-            <img src="/img/pass.png"  alt="" />
-          </div>
-          <div class="col">
-            <h2 class="fs-1 my-2">Bienvenidos</h2>
-
-            <form action="">
-              <div class="mb-4">
-                <label for="email" class="form-label">Correo Electronico</label>
-                <input type="email" class="form-control" name="email" />
-              </div>
-              <div class="mb-4">
-                <label for="password" class="form-label">Contraseña</label>
+      <div class="container mb-5">
+        <div class="row justify-content-center">
+          <div class="col-md-8 m-5 bg-light p-3 ">
+            <h1 class="text-center font-weight-bold text-primary">Contacto</h1>
+            <hr class="bg-light" />
+            <h5 class="text-center text-success"></h5>
+            <form action="" method="post" id="form-box" class="p-2">
+              <div class="form-group input-group m-2">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"
+                    ><i class="fas fa-user"></i
+                  ></span>
+                </div>
                 <input
-                  type="password"
+                  type="text"
+                  name="name"
                   class="form-control"
-                  name="password"
+                  placeholder="Escriba su nombre"
                   required
-                  minlength="6"
                 />
               </div>
-              <div class="mb-4 form-check">
+              <div class="form-group input-group m-2">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"
+                    ><i class="fas fa-envelope"></i
+                  ></span>
+                </div>
                 <input
-                  type="checkbox"
-                  name="connected"
-                  class="form-check-input"
+                  type="email"
+                  name="email"
+                  class="form-control"
+                  placeholder="Escriba su correo electronico"
                   required
                 />
-                <label for="connected" class="form-check-label"
-                  >Mantenerme Conenctado</label
-                >
               </div>
-              <div class="d-grid my-2">
-                <button class="btn btn-primary" type="submit">
-                  Iniciar Sesion
-                </button>
+              <div class="form-group input-group m-2">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"
+                    ><i class="fas fa-at"></i
+                  ></span>
+                </div>
+                <input
+                  type="text"
+                  name="subject"
+                  class="form-control"
+                  placeholder="Escriba el asunto"
+                  required
+                />
               </div>
-
-              <div class="my-3">
-                <span
-                  >No Tienes Cuenta?
-                  <a href="" style="text-decoration: none">Registrate</a></span
-                ><br />
-                <span
-                  ><a href="" style="text-decoration: none"
-                    >Recuperar Contraseña</a
-                  ></span
-                >
+              <div class="form-group input-group m-2">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"
+                    ><i class="fas fa-comment-alt"></i
+                  ></span>
+                </div>
+                <textarea
+                  name="msg"
+                  id="msg"
+                  class="form-control"
+                  placeholder="Escribe tu mensaje"
+                  cols="30"
+                  rows="4"
+                  required
+                ></textarea>
+              </div>
+              <div class="form-group text-center">
+                <a class="" href=""><button class="btn btn-primary m-3 w-50">Enviar</button></a>
+                <hr class="bg-light" />
+                <h2 class="text-center font-weight-bold text-primary">
+                  Visitanos en nuestra Sucursal
+                </h2>
+                <br />
+                <a
+                  title="Direccion"
+                  href="https://www.google.com/maps/place/RollingCode+School/@-26.8367009,-65.2072018,15z/data=!4m14!1m7!3m6!1s0x94225d3ad7f30f1d:0xf8606cd659b8e3e4!2sRollingCode+School!8m2!3d-26.8367009!4d-65.2072018!16s%2Fg%2F11h0b4kn08!3m5!1s0x94225d3ad7f30f1d:0xf8606cd659b8e3e4!8m2!3d-26.8367009!4d-65.2072018!16s%2Fg%2F11h0b4kn08"
+                  target="_blank"
+                  ><img
+                    class="container-fluid"
+                    src="/img/direccion.JPG"
+                    alt="Direccion"
+                /></a>
               </div>
             </form>
-
-            <div class="container w-100 my-5">
-              <div class="row text-center">
-                <div class="col-12 my-2">Registrate con</div>
-              </div>
-              <div class="row">
-                <div class="col">
-                  <button class="btn btn-outline-primary w-100 my1">
-                    <div class="row align-items-center">
-                      <div class="col-2">
-                        <img src="/img/logo face.ico" width="32" alt="" />
-                      </div>
-
-                      <div class="col-10 text-center">
-                        <span>Facebook</span>
-                      </div>
-                    </div>
-                  </button>
-                </div>
-
-                <div class="col">
-                  <button class="btn btn-outline-primary w-100 my1">
-                    <div class="row align-items-center">
-                      <div class="col-2">
-                        <img src="/img/login/google.ico" width="32" alt="" />
-                      </div>
-
-                      <div class="col-10 text-center">
-                        <span>Google</span>
-                      </div>
-                    </div>
-                  </button>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>

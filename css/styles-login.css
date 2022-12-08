@@ -1,0 +1,24 @@
+.cont-img-lg img {
+  width: 400px;
+}
+
+.margin-lg{
+    margin: 8%;
+}
+@media screen and (max-width: 1400px){
+    .margin-lg{
+        margin: 10%;
+    }
+    }
+@media screen and (max-width: 1200px){
+.margin-lg{
+    margin: 12%;
+}
+}
+
+@media screen and (max-width: 991px){
+    .margin-lg{
+        margin: 3%;
+        
+    }
+    }
